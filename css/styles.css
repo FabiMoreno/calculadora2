@@ -9,3 +9,142 @@ body {
 	font-family: "Source Sans Pro", sans-serif;
 	background-color: #7d5555;
 }
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./iconFonts/icomoon.eot?e8heg0');
+  src:  url('./iconFonts/icomoon.eot?e8heg0#iefix') format('embedded-opentype'),
+    url('./iconFonts/icomoon.ttf?e8heg0') format('truetype'),
+    url('./iconFonts/icomoon.woff?e8heg0') format('woff'),
+    url('./iconFonts/icomoon.svg?e8heg0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	align-items: center;
+}
+
+.calculator {
+	background-color: black;
+	border-radius: 1rem;
+	width: 25%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title, .visor {
+	padding: 0.75rem 0;
+    margin: 0 0.75rem;
+    background-color: #333;
+    width: 95%;
+    margin-top: 2.5%;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.botons {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.numbers {
+	width: 80%;
+	padding: 0.6rem;
+	display: flex;
+	flex-flow: wrap;
+    justify-content: space-between;
+
+}
+
+.menu {
+	padding: 0.6rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.number {
+	width: 60px;
+	height: 60px;
+	border-radius: 0.3rem;
+	margin: 0.25rem 0.55rem;
+	line-height: 60px;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.number.equals {
+	flex-grow: 3; 
+}
+
+.operations {
+	width: 15rem;
+	height: 250px;
+	left: 5rem;
+	top: -0.1rem;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+	position: absolute;
+	padding: 0.6rem;
+	border: 1px solid #9c27b0;
+}
+
+.operations > .number {
+	width: 90px;
+	background-color: orange;
+}
+
+.fucsia {
+	background-color: #9c27b0;
+}
+
+.azul {
+	background-color: #0d8cc5;
+}
+
+.naranja {
+	background-color: orange;
+}
+
+.number.fucsia {
+	margin: 0.3rem 0;
+}
+
+.visor {
+	background-color: white;
+	margin-bottom: 1rem;
+}
+
+input {
+	width: 100%;
+}
