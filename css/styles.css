@@ -103,7 +103,7 @@ body {
 }
 
 .number.equals {
-	flex-grow: 3; 
+	flex-grow: 3;
 }
 
 .operations {
@@ -147,4 +147,24 @@ body {
 
 input {
 	width: 100%;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+.button{
+	width: 4em;
+	height: 4em;
+	font-size: 1em;
+	margin: .3em;
+	cursor: pointer;
+}
+
+.textview{
+	width: 19%;
+	margin: .3em;
+	font-size: 2em;
+	padding: .3em;
 }
